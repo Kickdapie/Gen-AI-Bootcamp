@@ -4,7 +4,7 @@ st.title('Counter Example using Callbacks with args')
 if 'count' not in st.session_state:
     st.session_state.count = 0
 
-increment_value = st.number_input('Enter a value', value=1, step=5)
+increment_value = st.number_input('Enter a value', value=1, step=5) #number_input used!
 
 def increment_counter(increment_value):
     st.session_state.count += increment_value
