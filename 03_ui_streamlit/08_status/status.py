@@ -11,3 +11,7 @@ with st.status("Downloading data...", expanded=True) as status:
     status.update(label="Download complete!", state="complete", expanded=False)
 
 st.button('Rerun')
+st.button('Button')
+
+#notice how the button reruns the download without use of function
+#Figure out status feature
