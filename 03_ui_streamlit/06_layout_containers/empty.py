@@ -5,7 +5,7 @@
 import streamlit as st
 import time
 
-st.title("Pakistan")
+st.title("Danny")
 
 
 with st.empty():
@@ -14,4 +14,4 @@ with st.empty():
         time.sleep(1)
     st.write("✔️ 10 seconds over!")
 
-st.write("Pakistan zinda bad")
+st.write("Danny was here") #text appears after 10 seconds have passed
