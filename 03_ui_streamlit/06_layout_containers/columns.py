@@ -13,6 +13,7 @@ with col1:
 with col2:
    st.header("A dog")
    st.image("https://static.streamlit.io/examples/dog.jpg")
+   #makes sure images are static and consistent format
 
 with col3:
    st.header("An owl")
