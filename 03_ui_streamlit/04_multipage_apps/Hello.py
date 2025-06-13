@@ -5,6 +5,6 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to Zia's Page!")
+st.write("# Welcome to Danny's Page!")
 
-st.sidebar.success("Select a demo above.")
+st.sidebar.success("Select a different webpage")
