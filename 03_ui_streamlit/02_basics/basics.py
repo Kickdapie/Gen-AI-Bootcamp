@@ -67,7 +67,7 @@ status = st.radio("Select Gender: ", ('Male', 'Female'))
 # Male if male is selected else print female
 # show the result using the success function
 if (status == 'Male'):
-    st.success("Male")
+    st.success("SUccess")
 else:
     st.success("Female")
 
@@ -78,7 +78,7 @@ else:
 # first argument takes the title of the selectionbox
 # second argument takes options
 hobby = st.selectbox("Hobbies: ",
-                     ['Dancing', 'Reading', 'Sports'])
+                     ['Bowling', 'Sports', 'Writing'])
  
 # print the selected hobby
 st.write("Your hobby is: ", hobby)
