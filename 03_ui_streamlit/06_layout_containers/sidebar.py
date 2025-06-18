@@ -17,3 +17,14 @@ with st.sidebar:
 
 
 #TODO: add a callback function
+def onChange(method):
+    text = ''
+    if method == "Email":
+        text = st.text_input("Provide your email.")
+    elif method == "Home phone":
+        text = st.text_input("Provide your number.")
+    else:
+        text = st.text_input("Provide your number.")
+    st.write(f"You entered {text}")
+
+onChange(add_selectbox)
