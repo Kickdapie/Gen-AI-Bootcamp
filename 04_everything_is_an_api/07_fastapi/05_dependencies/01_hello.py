@@ -30,3 +30,16 @@ def dep_login(username : str = Query(None), password : str = Query(None)):
 @app.get("/signin")
 def login_api(user :  Annotated[dict,Depends(dep_login)]):
     return user
+
+
+"""
+When someone sends a GET request to /signin with username and password as query parameters, this happens:
+
+FastAPI sees that login_api has a dependency on dep_login.
+
+It calls dep_login automatically, passing in the username and password from the query string.
+
+The return value of dep_login is passed as the user argument in login_api.
+
+login_api simply returns the result.
+"""

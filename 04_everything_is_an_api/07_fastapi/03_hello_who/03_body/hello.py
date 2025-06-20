@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.post("/hi")
 def greet(who:str = Body(embed=True)):
-    return f"Hello? {who}?"
+    return f"Hello {who}, this uses body/JSON"

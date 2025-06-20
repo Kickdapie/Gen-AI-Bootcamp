@@ -8,4 +8,4 @@ app = FastAPI()
 
 @app.get("/hi") 
 def greet(who):
-    return f"Hello? {who}?"
+    return f"Hello mister {who}?"

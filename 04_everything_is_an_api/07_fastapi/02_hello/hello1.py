@@ -4,11 +4,11 @@ app : FastAPI = FastAPI()
 
 @app.get("/hi") 
 def greet():
-    return "Hello? World?"
+    return "Hello World!!!!"
 
-@app.get("/hi/{name}")
-def greet_with_name(name: str):
-    return "Hello? World, " + name
+@app.get("/hi/{variable}")
+def greet_with_name(variable: str):
+    return "Hello? World, " + variable
 
 # print(__name__)
 
