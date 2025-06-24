@@ -1,5 +1,5 @@
 import uvicorn
-from fastapi import FastAPI, WebSocket, Depends
+from fastapi import FastAPI, WebSocket, Depends, HTTPException
 from sqlalchemy.orm import sessionmaker
 from kafka_consumer import create_todo_consumer
 from models import Todo, TodoSchema
@@ -7,15 +7,20 @@ from sqlalchemy import create_engine
 from typing import List
 import websocket_handler
 from sqlalchemy.orm import Session
-
+from pydantic import BaseModel
+import os
 
 app = FastAPI()
 
-# Database setup (replace with your credentials)
-DATABASE_URL = "postgresql://user:password@postgres:5432/database"
+# Database setup (use environment variables)
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@postgres:5432/database")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Create tables
+from models import Base
+Base.metadata.create_all(bind=engine)
 
 # Dependency for database session
 def get_db():
@@ -25,9 +30,8 @@ def get_db():
     finally:
         db.close()
 
-# Kafka consumer setup (replace with your Kafka server details)
-bootstrap_servers = "localhost:9092"
-
+# Kafka consumer setup (use environment variables)
+bootstrap_servers = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092")
 topic = "todos"
 
 @app.on_event("startup")
@@ -42,6 +46,21 @@ async def websocket_endpoint(websocket: WebSocket):
 # Get all todos
 @app.get("/todos", response_model=List[TodoSchema])
 async def get_todos(session: Session = Depends(get_db)):
-    return session.query(Todo).all()
+    todos = session.query(Todo).all()
+    return todos
+
+# Create new todo
+@app.post("/todos", response_model=TodoSchema)
+async def create_todo(todo: TodoSchema, session: Session = Depends(get_db)):
+    db_todo = Todo(task=todo.task, completed=todo.completed)
+    session.add(db_todo)
+    session.commit()
+    session.refresh(db_todo)
+    return db_todo
+
+# Health check endpoint
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
 # Add more API endpoints for todo CRUD operations

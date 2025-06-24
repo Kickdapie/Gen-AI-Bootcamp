@@ -6,3 +6,6 @@ websockets
 asyncpg
 psycopg2-binary
 pytest
+pydantic
+streamlit
+requests
