@@ -13,7 +13,7 @@ import os
 app = FastAPI()
 
 # Database setup (replace with your credentials)
-DATABASE_URL = "postgresql://neondb_owner:npg_7ELNpgVKu4HQ@ep-plain-bar-a8qj9hxh-pooler.eastus2.azure.neon.tech/neondb?sslmode=require"
+DATABASE_URL = "postgresql://user:password@host:port/database"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

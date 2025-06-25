@@ -9,7 +9,7 @@ from websocket_handler import broadcast_todo_update
 from queue_bus import push_todo_update
 
 # Define your engine (use environment variables)
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://neondb_owner:npg_7ELNpgVKu4HQ@ep-plain-bar-a8qj9hxh-pooler.eastus2.azure.neon.tech/neondb?sslmode=require")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@host:port/database")
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
