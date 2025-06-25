@@ -6,9 +6,10 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from models import Todo
 from websocket_handler import broadcast_todo_update
+from queue_bus import push_todo_update
 
 # Define your engine (use environment variables)
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@postgres:5432/database")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://neondb_owner:npg_7ELNpgVKu4HQ@ep-plain-bar-a8qj9hxh-pooler.eastus2.azure.neon.tech/neondb?sslmode=require")
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
@@ -32,6 +33,7 @@ async def consume_todos(app, bootstrap_servers, topic):
                     print(f"Saved todo to database: {todo.id}")
 
                 # Broadcast to WebSocket clients
+                await push_todo_update(todo_data) #NEW
                 await broadcast_todo_update(todo_data)
                 
             except json.JSONDecodeError as e:

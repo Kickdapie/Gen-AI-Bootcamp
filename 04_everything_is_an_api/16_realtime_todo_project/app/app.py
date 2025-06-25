@@ -12,15 +12,10 @@ import os
 
 app = FastAPI()
 
-# Database setup (use environment variables)
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@postgres:5432/database")
-
+# Database setup (replace with your credentials)
+DATABASE_URL = "postgresql://neondb_owner:npg_7ELNpgVKu4HQ@ep-plain-bar-a8qj9hxh-pooler.eastus2.azure.neon.tech/neondb?sslmode=require"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-# Create tables
-from models import Base
-Base.metadata.create_all(bind=engine)
 
 # Dependency for database session
 def get_db():
@@ -30,8 +25,8 @@ def get_db():
     finally:
         db.close()
 
-# Kafka consumer setup (use environment variables)
-bootstrap_servers = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092")
+# Kafka consumer setup (replace with your Kafka server details)
+bootstrap_servers = "localhost:8000"
 topic = "todos"
 
 @app.on_event("startup")
@@ -43,24 +38,6 @@ async def startup_event():
 async def websocket_endpoint(websocket: WebSocket):
     await websocket_handler.handle_websocket(websocket)
 
-# Get all todos
 @app.get("/todos", response_model=List[TodoSchema])
 async def get_todos(session: Session = Depends(get_db)):
-    todos = session.query(Todo).all()
-    return todos
-
-# Create new todo
-@app.post("/todos", response_model=TodoSchema)
-async def create_todo(todo: TodoSchema, session: Session = Depends(get_db)):
-    db_todo = Todo(task=todo.task, completed=todo.completed)
-    session.add(db_todo)
-    session.commit()
-    session.refresh(db_todo)
-    return db_todo
-
-# Health check endpoint
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
-
-# Add more API endpoints for todo CRUD operations
+    return session.query(Todo).all()
