@@ -8,7 +8,7 @@
 class TestClass:
     def test_one(self):
         x = "this"
-        assert "h" in x
+        assert "h" in x #assert tests the input and gives output as 0 or 1
 
     def test_two(self):
         x = "hello"
