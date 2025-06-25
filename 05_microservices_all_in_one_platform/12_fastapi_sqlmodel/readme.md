@@ -57,3 +57,9 @@ In summary, FastAPI is optimized for microservices due to its performance, suppo
 
 
 
+*Introducing OpenWebUI as the concrete example for this lesson
+https://github.com/open-webui/open-webui
+    *FastAPI in Backend/open_webui/routers*
+    *PostgreSQL in Backend/open_webui/models*
+    *Test for FastAPI is in Backend/open_webui/test/app\webui/routers*
+    *Test for PostgreSQL? (Using tavern tests?)*
