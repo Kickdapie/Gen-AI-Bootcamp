@@ -90,3 +90,4 @@ SQLModel is a library for interacting with SQL databases in Python, designed to 
 
 SQLModel is well-optimized for microservice development with Python and FastAPI, especially in scenarios that involve complex data models and require robust database interactions. It brings together the strengths of SQLAlchemy and Pydantic, offering a powerful toolset for developers. 
 
+https://youtu.be/hMJdsnrEcSQ *Watch this video from 3:25 to 4:00*
