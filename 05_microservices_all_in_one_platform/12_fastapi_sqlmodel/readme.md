@@ -63,3 +63,4 @@ https://github.com/open-webui/open-webui
     *PostgreSQL in Backend/open_webui/models*
     *Test for FastAPI is in Backend/open_webui/test/app\webui/routers*
     *Test for PostgreSQL? (Using tavern tests?)*
+    https://youtu.be/hMJdsnrEcSQ *Link to video explaining FastAPI and PostgreSQL in OpenWebUI's Program*
