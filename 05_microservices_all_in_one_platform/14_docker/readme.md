@@ -86,10 +86,17 @@ Docker, Docker Compose, and Kubernetes are not just optimized for microservices 
 
 
 *Refer to https://github.com/ajeetraina/ollama-openwebui-kubernetes* 
+
 *Use this to help deploy with kubernetes*
+
 *For manifest use this instead of kubectl apply -f ./*
+
 Kubectl apply -f .namespace.yaml
+
 kubectl apply -f .pvc.yaml
+
 kubectl apply -f .Ingress.yaml
+
 kubectl apply -f .Services.yaml
+
 kubectl apply -f .Deployment.yaml
