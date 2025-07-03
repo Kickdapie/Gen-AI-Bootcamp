@@ -46,6 +46,10 @@ Kubernetes has a rich ecosystem of tools and services for monitoring, logging, s
 Adopting a serverless container platform that is Kubernetes-powered offers the scalability, efficiency, and cost-effectiveness of serverless computing while retaining the powerful orchestration capabilities of Kubernetes. This approach ensures that you can handle dynamic workloads efficiently, reduce operational overhead, and enhance developer productivity, all while maintaining flexibility and avoiding vendor lock-in.
 
 
+
+*Add more engineering pros and cons*
+
+
 ### Comparison of Kubernetes-Powered Services
 
 #### 1. **Azure Container Apps**
@@ -120,4 +124,31 @@ Adopting a serverless container platform that is Kubernetes-powered offers the s
 ### Summary
 
 Choosing the right Kubernetes-powered platform depends on your needs for management and control. Fully managed services like Google Cloud Run, Azure Container Apps, and GKE Autopilot offer ease of use and scalability, ideal for teams focusing on application development without worrying about infrastructure. Semi-managed services like AWS Karpenter offer a balance, with some automation while allowing for more customization. Native Kubernetes provides maximum control and customization at the cost of increased management overhead.
+
+
+
+
+****
+https://ameriecloud.medium.com/hands-on-how-to-set-up-terraform-with-vscode-and-connect-to-aws-95302be76137
+
+This paper talks about terraform and how to connect it AWS
+Terraform has a state element has it only runs the changes between last and new version
+Bicep doesn't have state and runs the full program
+
+
+Steps:
+1. To get to environment variables - right click the window start button, go to system, go to advanced system settings, environment variables
+
+2. Initiate this AWS connectivity process by crafting a new file bearing the extension .tf.
+  - Create a new project folder anywhere and make a main.tf file in that folder
+  - Copy whats in images (get access keys and secret ket in AWS through the IAM portal by creating a new one) 
+
+3.  Craft your Terraform code as exemplified below, precisely defining the desired configuration for your EC2 instance with ami and instance type.
+  - ami relies on region so you have to get your region ami's codes so run this:
+    - aws ec2 describe-images --owners amazon --filters "Name=name,Values=amzn2-ami-hvm-*-x86_64-gp2" --query "Images[*].[ImageId,Name]" --output table --region us-east-1
+  - makes sure you aws is configured to run from command line (using access and secret key)
+
+4. Monitor the results within your Visual Studio Code environment and simultaneously inspect the AWS Console for a comprehensive view of the provisioned EC2 instance.
+  - Go to AWS portal and in search bar, search "EC2" and click on it
+  - CLick on instances on left tab bar and it should show up (make sure region is correct)
 
