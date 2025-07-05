@@ -8,4 +8,5 @@ message.write("Hello human")
 message.bar_chart(np.random.randn(30, 3))
 
 message1 = st.chat_message("user") #This is the user talking
+
 message1.write("Thanks")

@@ -6,6 +6,7 @@ st.title('Welcome to The only BMI Calculator in the World')
  
 # TAKE WEIGHT INPUT in kgs
 weight = st.number_input("Enter your weight (in ilbs)")
+
  
 # TAKE HEIGHT INPUT
 # radio button to choose height format
@@ -37,7 +38,11 @@ else:
  
     # 1 meter = 3.28
     try:
+<<<<<<< HEAD
         bmi = weight / (((height/10))**2)
+=======
+        bmi = weight / (((height/3.28))**2)
+>>>>>>> sashank/main
     except:
         st.text("Enter some value of height")
  

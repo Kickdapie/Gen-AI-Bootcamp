@@ -29,6 +29,7 @@ def dep_login(username : str = Query(None), password : str = Query(None)):
     
 @app.get("/signin")
 def login_api(user :  Annotated[dict,Depends(dep_login)]):
+<<<<<<< HEAD
     return user
 
 
@@ -43,3 +44,6 @@ The return value of dep_login is passed as the user argument in login_api.
 
 login_api simply returns the result.
 """
+=======
+    return user
+>>>>>>> sashank/main

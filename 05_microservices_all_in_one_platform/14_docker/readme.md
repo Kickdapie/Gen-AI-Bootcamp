@@ -80,6 +80,7 @@ Docker and containers are highly optimized for microservices development, both f
 
 ### Conclusion
 
+<<<<<<< HEAD
 Docker, Docker Compose, and Kubernetes are not just optimized for microservices development and deployment, but they are also instrumental in avoiding cloud vendor lock-in due to their portability, widespread support across cloud providers, and standardization. They offer a powerful set of tools for developing, deploying, managing, and scaling microservices, whether in local development environments or in the cloud. However, it's important to have the necessary expertise to manage and operate these technologies effectively, especially Kubernetes, which can be complex.
 
 
@@ -100,3 +101,6 @@ kubectl apply -f .Ingress.yaml
 kubectl apply -f .Services.yaml
 
 kubectl apply -f .Deployment.yaml
+=======
+Docker, Docker Compose, and Kubernetes are not just optimized for microservices development and deployment, but they are also instrumental in avoiding cloud vendor lock-in due to their portability, widespread support across cloud providers, and standardization. They offer a powerful set of tools for developing, deploying, managing, and scaling microservices, whether in local development environments or in the cloud. However, it's important to have the necessary expertise to manage and operate these technologies effectively, especially Kubernetes, which can be complex.
+>>>>>>> sashank/main

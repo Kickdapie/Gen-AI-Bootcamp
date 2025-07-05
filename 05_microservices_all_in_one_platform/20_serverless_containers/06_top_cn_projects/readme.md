@@ -20,8 +20,11 @@
 - **Advantages**: Simplifies deployments, versioning, and rollbacks.
 - **Integration**: Fully compatible with all Kubernetes environments.
 
+<<<<<<< HEAD
 *Use helm for deployment*
 
+=======
+>>>>>>> sashank/main
 #### 5. Fluentd
 - **Description**: Data collector for unified logging.
 - **Advantages**: Flexible, supports various data sources/outputs.

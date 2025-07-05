@@ -8,7 +8,11 @@
 class TestClass:
     def test_one(self):
         x = "this"
+<<<<<<< HEAD
         assert "h" in x #assert tests the input and gives output as 0 or 1
+=======
+        assert "h" in x
+>>>>>>> sashank/main
 
     def test_two(self):
         x = "hello"

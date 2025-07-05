@@ -4,6 +4,7 @@ app = FastAPI()
 
 @app.get("/hi/{who}")
 def greet(who:str):
+<<<<<<< HEAD
     return f"Hello there, {who}?"
 
 '''
@@ -17,6 +18,9 @@ It can be anything the user types after /hi/.
 Example:
 http://localhost:8000/hi/john
 '''
+=======
+    return f"Hello? {who}?"
+>>>>>>> sashank/main
 
 # @app.get("/hi/{who}/piaic")
 # def greet(who:str):

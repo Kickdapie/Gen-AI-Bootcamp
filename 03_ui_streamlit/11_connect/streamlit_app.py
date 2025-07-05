@@ -14,6 +14,7 @@ with conn.session as s:
     for k in pet_owners:
         s.execute(
             text('INSERT INTO pet_owners (person, pet) VALUES (:owner, :pet);'),
+
             params=dict(owner=k, pet=pet_owners[k])
         )
     s.commit()
@@ -33,3 +34,4 @@ You must wrap the SQL in text() to mark it explicitly as a SQL statement.
 Why Does it need secrets.toml (for privacy reasons)
 Why is session needed to insert the data (to act as communicator for the database)
 '''
+

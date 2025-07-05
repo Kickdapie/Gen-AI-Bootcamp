@@ -13,7 +13,7 @@ app = FastAPI(
     contact={
         "name": "Danny Nguyen",
         "url": "https://localhost:8000/contact/",
-        "email": "dannynuyen12345@gmail.com",
+        "email": "email@gmail.com",
     },
     license_info={
         "name": "Apache 2.0",
@@ -29,8 +29,16 @@ app = FastAPI(
 )
 
 # SessionMiddleware must be installed to access request.session
+<<<<<<< HEAD
 app.add_middleware(SessionMiddleware, secret_key="!secret") #allows metadata for request header
 
 app.router.include_router(router, tags=["OAuth2 Authentication"]) #going to use a router
 
 Base.metadata.create_all(bind=engine) #creates sqlalchemy metadata
+=======
+app.add_middleware(SessionMiddleware, secret_key="!secret")
+
+app.router.include_router(router, tags=["OAuth2 Authentication"])
+
+Base.metadata.create_all(bind=engine)
+>>>>>>> sashank/main

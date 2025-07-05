@@ -2,6 +2,7 @@
 
 https://learn.microsoft.com/en-us/azure/container-apps/revisions
 
+<<<<<<< HEAD
 Change management can be challenging as you develop containerized applications in the cloud. Ultimately, you need the support to track changes, ensure uptime, and have mechanisms to handle smooth rollbacks.
 
 Change management in Azure Container Apps is powered by revisions, which are a snapshot of each version of your container app.
@@ -39,3 +40,5 @@ After a container app is successfully provisioned, a revision enters its operati
 
 Inactive status
 Revisions can also enter an inactive state. These revisions don't possess provisioning or running states. However, Azure Container Apps maintains a list of these revisions, accommodating up to 100 inactive entries. You can activate a revision at any time
+=======
+>>>>>>> sashank/main

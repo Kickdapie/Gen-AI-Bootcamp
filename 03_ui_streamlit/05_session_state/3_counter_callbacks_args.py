@@ -6,6 +6,7 @@ if 'count' not in st.session_state:
 
 increment_value = st.number_input('Enter a value', value=1, step=5) #number_input used!
 
+
 def increment_counter(increment_value):
     st.session_state.count += increment_value
 

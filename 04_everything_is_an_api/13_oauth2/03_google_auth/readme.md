@@ -18,7 +18,11 @@ Now clone the repo/copy main.py file in same dir where your google credentials f
 
 `pip install -r requirements.txt`
 
+<<<<<<< HEAD
 `uvicorn run main:app --reload` #this should be uvicorn main:app --reload and credentials.json should be client_secret.json!!!
+=======
+`uvicorn run main:app --reload`
+>>>>>>> sashank/main
 
 visit `http://localhost:8000/api/google/login` endpoint. After signing in with Google you can view your retrieved details here.
 

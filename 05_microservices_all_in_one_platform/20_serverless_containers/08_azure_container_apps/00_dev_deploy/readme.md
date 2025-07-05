@@ -4,6 +4,7 @@
 
 [Quickstart: Deploy to Azure Container Apps using Visual Studio Code](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio-code)
 
+<<<<<<< HEAD
 When you run:
 
 Azure Container Apps: Deploy Project from Workspace
@@ -30,3 +31,5 @@ The extension does the sequence of the build. The actual command building of the
 
 To change the sequence, use the azure CLI directly (using bicep or terraform)
 ***
+=======
+>>>>>>> sashank/main

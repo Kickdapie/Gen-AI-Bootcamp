@@ -2,6 +2,7 @@
 
 https://learn.microsoft.com/en-us/azure/container-apps/environment
 
+<<<<<<< HEAD
 *A Container Apps environment is a secure boundary around one or more container apps and jobs. The Container Apps runtime manages each environment by handling OS upgrades, scale operations, failover procedures, and resource balancing.
 
 Environments include the following features:
@@ -22,3 +23,5 @@ You can add Azure Functions and Azure Spring Apps to your Azure Container Apps e
 
 ***
 Basically a bigger container holding multiple containers that share resources
+=======
+>>>>>>> sashank/main

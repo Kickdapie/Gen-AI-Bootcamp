@@ -57,6 +57,7 @@ In summary, FastAPI is optimized for microservices due to its performance, suppo
 
 
 
+<<<<<<< HEAD
 *Introducing OpenWebUI as the concrete example for this lesson
 
 https://github.com/open-webui/open-webui
@@ -70,3 +71,5 @@ https://github.com/open-webui/open-webui
     *Test for PostgreSQL? (Using tavern tests?)*
     
     https://youtu.be/hMJdsnrEcSQ *Link to video explaining FastAPI and PostgreSQL in OpenWebUI's Program*
+=======
+>>>>>>> sashank/main

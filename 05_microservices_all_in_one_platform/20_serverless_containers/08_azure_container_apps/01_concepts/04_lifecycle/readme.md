@@ -2,6 +2,7 @@
 
 https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management
 
+<<<<<<< HEAD
 The Azure Container Apps application lifecycle revolves around revisions.
 
 When you deploy a container app, the first revision is automatically created. More revisions are created as containers change, or any adjustments are made to the template section of the configuration.
@@ -50,3 +51,5 @@ If your application doesn't respond within 30 seconds to the SIGTERM message, th
 
 Additionally, make sure your application can gracefully handle shutdowns. Containers restart regularly, so don't expect state to persist inside a container. Instead, use external caches for expensive in-memory cache requirements.
 
+=======
+>>>>>>> sashank/main

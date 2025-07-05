@@ -8,6 +8,7 @@ import streamlit as st
 
 import pandas as pd
 df : pd.DataFrame = pd.DataFrame({'col1': [1,2,3],'col2':list('xyz')})
+
 df  # 👈 Draw the dataframe
 
 
@@ -25,6 +26,7 @@ ax.hist(arr, bins=30)
 
 fig  # 👈 Draw a Matplotlib chart
 
+<<<<<<< HEAD
 '# HELLO WORLD!'
 
 # hello world
@@ -33,4 +35,13 @@ fig  # 👈 Draw a Matplotlib chart
 
 This is some _markdown_.
 #underscore around a word makes it italized
+=======
+'# Pakistan zinda bad'
+
+# hello world
+'''
+# This is the document title
+
+This is some _markdown_.
+>>>>>>> sashank/main
 '''

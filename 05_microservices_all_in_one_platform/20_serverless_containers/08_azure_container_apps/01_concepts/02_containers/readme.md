@@ -2,6 +2,7 @@
 
 https://learn.microsoft.com/en-us/azure/container-apps/containers
 
+<<<<<<< HEAD
 *Azure Container Apps manages the details of Kubernetes and container orchestration for you. Containers in Azure Container Apps can use any runtime, programming language, or development stack of your choice.
 
 
@@ -11,3 +12,5 @@ You can define one or more init containers in a container app. Init containers r
 
 Sidecar containers
 You can define multiple containers in a single container app to implement the sidecar pattern.
+=======
+>>>>>>> sashank/main

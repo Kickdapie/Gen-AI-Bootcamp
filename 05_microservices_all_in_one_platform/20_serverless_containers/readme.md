@@ -46,10 +46,13 @@ Kubernetes has a rich ecosystem of tools and services for monitoring, logging, s
 Adopting a serverless container platform that is Kubernetes-powered offers the scalability, efficiency, and cost-effectiveness of serverless computing while retaining the powerful orchestration capabilities of Kubernetes. This approach ensures that you can handle dynamic workloads efficiently, reduce operational overhead, and enhance developer productivity, all while maintaining flexibility and avoiding vendor lock-in.
 
 
+<<<<<<< HEAD
 
 *Add more engineering pros and cons*
 
 
+=======
+>>>>>>> sashank/main
 ### Comparison of Kubernetes-Powered Services
 
 #### 1. **Azure Container Apps**
@@ -125,6 +128,7 @@ Adopting a serverless container platform that is Kubernetes-powered offers the s
 
 Choosing the right Kubernetes-powered platform depends on your needs for management and control. Fully managed services like Google Cloud Run, Azure Container Apps, and GKE Autopilot offer ease of use and scalability, ideal for teams focusing on application development without worrying about infrastructure. Semi-managed services like AWS Karpenter offer a balance, with some automation while allowing for more customization. Native Kubernetes provides maximum control and customization at the cost of increased management overhead.
 
+<<<<<<< HEAD
 
 
 
@@ -152,3 +156,5 @@ Steps:
   - Go to AWS portal and in search bar, search "EC2" and click on it
   - CLick on instances on left tab bar and it should show up (make sure region is correct)
 
+=======
+>>>>>>> sashank/main
