@@ -36,7 +36,7 @@ https://medium.com/data-science/using-generative-ai-to-automatically-create-a-vi
 
 https://github.com/lakshmanok/lakblogs/blob/main/genai_seminar/create_lecture.ipynb
 
-This is used for generation of videos using AI in a notebook
+This is used for generation of videos using AI in a notebook. This article takes an article or paper and turns it into powerpoint slides and audio and connects them.
 
 - uses Google Gemini Flash
 - I used Python to download the article as a PDF, and upload it to a temporary storage location that Gemini can read
