@@ -1,0 +1,3 @@
+-This is a comprehensive intro to api's, but it's a little longwinded
+-I think a definition of an API and why they've become popular is enough
+-Also, a better explanation of what a request is would be nice. A request itself is probably self-explanatory but it would be nice.
