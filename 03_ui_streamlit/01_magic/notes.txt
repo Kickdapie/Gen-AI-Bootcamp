@@ -1,1 +1,2 @@
 -remove the Pakistan stuff
+-explain the numpy stuff more, it came out of nowhere
