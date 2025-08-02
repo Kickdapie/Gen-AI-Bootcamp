@@ -1,12 +1,13 @@
 from pathlib import Path
 
-
 path = Path('pi_million_digits.txt')
 contents = path.read_text()
 
+# Remember .splitlines makes list of strings based on newlines
 lines = contents.splitlines()
 pi_string = ''
 for line in lines:
+    # Remember lstrip removes whitespace
     pi_string += line.lstrip()
 
 birthday = input("Enter your birthday, in the form mmddyy: ")

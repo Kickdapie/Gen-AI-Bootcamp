@@ -1,0 +1,32 @@
+REQUESTS ------------------------>
+HTTP Methods and Usage:**
+- **GET:** Retrieve resources.
+- **POST:** Create new resources.
+- **PUT:** Update existing resources.
+- **DELETE:** Delete resources.
+- **OPTIONS:** Get API capabilities.
+- **HEAD:** Retrieve resource headers without the body.
+- **PATCH:** Partially update resources.
+
+Response Codes:**
+- **200 (OK):** Request successful.
+- **201 (Created):** Resource created successfully.
+- **400 (Bad Request):** Invalid request syntax or data.
+- **401 (Unauthorized):** Authentication required.
+- **404 (Not Found):** Resource not found.
+- **500 (Internal Server Error):** Server-side error.
+
+Headers usually has data for authorization
+Example:
+    headers: dict = {'Authorization': 'Bearer 4ab4bfde54bea0eb852e97997ea6600ff063ff72fd0b17ffe0eb0676e7eaee53'}
+    response3: Response = requests.patch(f'https://simple-books-api.glitch.me/orders/{orderId}', headers = headers, json = data2)
+
+Json usually has data to send
+Example:
+    data2 = {
+        "customerName": "Qasim"
+    }
+    response3: Response = requests.patch(f'https://simple-books-api.glitch.me/orders/{orderId}', headers = headers, json = data2)
+
+
+PYDANTIC ------------------------>

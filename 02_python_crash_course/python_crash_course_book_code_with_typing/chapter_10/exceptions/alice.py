@@ -1,6 +1,10 @@
 from pathlib import Path
 
-
+# How to read the contents of a file
+# .read_text
+# .split
+# Path(filename)
+# FileNotFound error
 path = Path('alice.txt')
 try:
     contents = path.read_text(encoding='utf-8')

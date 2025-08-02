@@ -1,4 +1,5 @@
-def make_pizza(size: int, *toppings: str)->Nonw:
+# * allows for multiple arguments to be passed
+def make_pizza(size: int, *toppings: str)->None:
     """Summarize the pizza we are about to make."""
     print(f"\nMaking a {size}-inch pizza with the following toppings:")
     for topping in toppings:

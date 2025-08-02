@@ -1,0 +1,4 @@
+-The Openai API officially supports outputs in text and json format
+-However, you can make ChatGPT output in other formats by asking it to output in a different format
+in either the system or user prompt. If you ask for different output formats in both prompts, the user prompt's
+format takes precedence.

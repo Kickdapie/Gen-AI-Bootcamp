@@ -1,5 +1,6 @@
 from typing import Optional
 
+# Optional means it either accepts the type or None
 def build_person(first_name: str, last_name: str, age: Optional[int] = None) -> dict:
     """
     Return a dictionary of information about a person.

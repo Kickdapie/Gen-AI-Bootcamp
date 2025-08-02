@@ -1,0 +1,19 @@
+model_dump_json: put the values in an object in json format
+Example:
+user1.model_dump_json() outputs
+'{"name":"Zia Khan","email":"zia@panacloud.com","account_id":10}'
+
+model_dump does the same as model_dump_json except it returns a dictionary
+
+model_validate_json: validate the values in the object and see if they're valid
+Example:
+user_obj : User = User.model_validate_json(user_json_str) will raise an error
+if the arguments are not valid
+
+repr(): print EVERYTHING for an object
+Example:
+print(repr('hello')) prints 'hello'
+print(str('hello')) prints hello
+
+Type hints are suggestions, they don't have to be strictly followed like in Java
+

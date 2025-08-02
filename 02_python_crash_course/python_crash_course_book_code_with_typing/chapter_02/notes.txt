@@ -1,0 +1,3 @@
+- Type hints are not required in python, but they can be put in the format variable:type
+- Explanations for .title(), .upper(), .lower(), and f strings would be helpful, but people can learn by just running the notebooks too, 
+  those methods are pretty self-explanatory

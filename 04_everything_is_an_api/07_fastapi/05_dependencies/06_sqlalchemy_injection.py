@@ -24,8 +24,6 @@ app = FastAPI()
 
 @app.get("/hello")
 def add_data(db: Annotated[Session, Depends(get_db)]):
-
     # Now you can use db as a session object to query the database and do other operations
     # i.e: db.query(User).filter(User.name == "test").first() where User is a SQLAlchemy ORM model
-
     return {"message": "Hello from FastAPI with SQLAlchemy DB Injection"}

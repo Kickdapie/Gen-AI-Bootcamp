@@ -32,8 +32,8 @@ Let's use the tools provided by FastAPI to handle security. And they automatical
    - A "token" is just a string with some content that we can use later to verify this user.
    - Normally, a token is set to expire after some time.
      So, the user will have to log in again at some point later.
-     And if the token is stolen, the risk is less. It is not like a permanent key that will work forever (in most of the cases).
-4. The frontend stores that token temporarily somewhere.
+`      And if the token is stolen, the risk is less. It is not like a permanent key that will work forever (in most of the cases).
+`4. The frontend stores that token temporarily somewhere.
 5. User clicks in the frontend to go to another section of the frontend web app.
 6. The frontend needs to fetch some more data from the API.
    But it needs authentication for that specific endpoint.

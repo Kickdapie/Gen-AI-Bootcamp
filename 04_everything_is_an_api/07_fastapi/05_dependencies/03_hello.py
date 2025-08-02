@@ -1,12 +1,12 @@
-from fastapi import FastAPI, Depends 
+from fastapi import FastAPI, Depends
 from typing import Annotated
 
-def depfunc1(num:int): 
+def depfunc1(num:int):
     num = int(num)
     num += 1
     return num
 
-def depfunc2(num): 
+def depfunc2(num):
     num = int(num)
     num += 1
     return num

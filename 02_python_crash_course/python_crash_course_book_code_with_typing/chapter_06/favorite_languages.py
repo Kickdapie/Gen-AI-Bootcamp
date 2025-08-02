@@ -5,6 +5,7 @@ favorite_languages = {
       'phil': ['python', 'haskell'],
       }
 
+# Remembers .items()
 for name, languages in favorite_languages.items():
     print(f"\n{name.title()}'s favorite languages are:")
     for language in languages:

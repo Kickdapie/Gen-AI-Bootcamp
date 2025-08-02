@@ -2,6 +2,8 @@
 aliens = []
 
 # Make 30 green aliens.
+
+# range(30) is the same as range(0, 30)
 for alien_number in range(30):
     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
     aliens.append(new_alien)

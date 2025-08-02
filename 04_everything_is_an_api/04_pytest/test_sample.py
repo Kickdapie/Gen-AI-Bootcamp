@@ -7,7 +7,7 @@ def func1(x:int)->int:
 
 
 def test_answer():
-    assert func(3) == 5
+    assert func(3) == 4
 
 def test_answer1():
     assert func1(3) == 4

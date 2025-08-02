@@ -1,5 +1,5 @@
 banned_users:list[SyntaxWarning] = ['andrew', 'carolina', 'david']
-user:str = 'marie'
+user:str = 'andrew'
 
-if user not in banned_users:
+if user in banned_users:
     print(f"{user.title()}, you can post a response if you wish.")

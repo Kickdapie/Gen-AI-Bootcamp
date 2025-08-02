@@ -7,7 +7,6 @@ class Creature(BaseModel):
     description: str
     aka: str
 
-
 thing = Creature(
     name="yeti",
     country="CN",

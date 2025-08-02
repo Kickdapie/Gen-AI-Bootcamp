@@ -4,6 +4,9 @@
 
 https://fastapi.tiangolo.com/tutorial/request-forms/
 
+Basically, form data allows you to upload files from an HTML form to a server
+-----------------------------------------------
+
 Note:
 
 [Official Docs are also very important](https://fastapi.tiangolo.com/learn/)

@@ -49,7 +49,7 @@ class Battery:
 
         print(f"This car can go about {range} miles on a full charge.")
 
-
+# Inheritance
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
@@ -60,7 +60,6 @@ class ElectricCar(Car):
         """
         super().__init__(make, model, year)
         self.battery = Battery()
-
 
 my_leaf = ElectricCar('nissan', 'leaf', 2024)
 print(my_leaf.get_descriptive_name())

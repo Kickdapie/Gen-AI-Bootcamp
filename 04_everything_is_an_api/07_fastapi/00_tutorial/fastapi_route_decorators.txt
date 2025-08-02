@@ -1,0 +1,10 @@
+FastAPI Route Decorators and Their Purposes:
+
+@app.get()       - Handles HTTP GET requests (used for fetching data)
+@app.post()      - Handles HTTP POST requests (used for creating data)
+@app.put()       - Handles HTTP PUT requests (used for full updates)
+@app.patch()     - Handles HTTP PATCH requests (used for partial updates)
+@app.delete()    - Handles HTTP DELETE requests (used for deleting data)
+@app.options()   - Handles HTTP OPTIONS requests (used to get allowed methods)
+@app.head()      - Handles HTTP HEAD requests (like GET but returns no body)
+@app.trace()     - Handles HTTP TRACE requests (used for debugging)

@@ -1,0 +1,3 @@
+-Pinecone stores vector databases, which are numerical representations of data
+-Install dependencies from requirements.txt
+-Call API

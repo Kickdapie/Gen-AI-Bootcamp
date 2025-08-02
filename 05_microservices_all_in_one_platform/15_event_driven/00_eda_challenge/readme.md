@@ -12,7 +12,7 @@ Here's a breakdown of why it's used and its pros and cons:
 
 **Why use EDA?**
 
-* **Loose coupling:**  Components are independent and communicate through events,  making them easier to develop, maintain, and update. 
+* **Loose coupling:**  Components are independent and communicate through events,  making them easier to develop, maintain, and update.
 * **Scalability:**  EDA can handle increased load by adding more consumers to process events.
 * **Real-time processing:**  Events can trigger actions as they happen, enabling real-time applications.
 

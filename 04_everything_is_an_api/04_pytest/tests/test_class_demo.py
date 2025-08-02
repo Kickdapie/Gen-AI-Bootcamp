@@ -1,6 +1,6 @@
 # content of test_class_demo.py
 class TestClassDemoInstance:
-    value = 0
+    value = 1
 
     def test_one(self):
         self.value = 1

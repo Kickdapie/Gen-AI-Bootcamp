@@ -15,6 +15,7 @@
 #     result = login(user,password) # custom calling
 #     return result
 # Example 02 new way with Dependencies injection
+
 from fastapi import FastAPI, Depends, Query
 from typing import Annotated
 

@@ -1,0 +1,2 @@
+-Streaming responses allows you to output responses as they come in chunks instead of 
+waiting for them to come completely and then outputting them all at once. Streaming is useful for large responses.

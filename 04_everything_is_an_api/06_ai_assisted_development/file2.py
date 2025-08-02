@@ -14,3 +14,6 @@ def login(username,password):
 def add_three_numbers(a,b,c):
     d = a+b+c
     return d
+
+def add_four_numbers(a,b,c,d):
+    return a+b+c+d

@@ -43,7 +43,7 @@ st.write(range(10))
  
 # import Image from pillow to open images
 from PIL import Image
-img = Image.open("streamlit.png")
+img = Image.open("/home/sashank/Desktop/gen_ai_bootcamp/03_ui_streamlit/02_basics/streamlit.png")
  
 # display image using streamlit
 # width is used to set the width of an image

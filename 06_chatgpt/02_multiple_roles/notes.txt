@@ -1,0 +1,3 @@
+-The system prompt changes the overall behavior and personality of the AI
+-The user prompt gives it a clear task to perform
+-The system prompt modifies how the user prompt is processed and responded to

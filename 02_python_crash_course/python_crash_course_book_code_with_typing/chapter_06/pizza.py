@@ -10,3 +10,7 @@ print(f"You ordered a {pizza['crust']}-crust pizza "
 
 for topping in pizza['toppings']:
     print(f"\t{topping}")
+
+for prop, value in pizza.items():
+    print(prop)
+    print(value)

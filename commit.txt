@@ -1,0 +1,3 @@
+cd /home/sashank/Desktop/gen_ai_bootcamp
+git commit -m "commit message"
+git push origin -u main

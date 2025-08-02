@@ -1,0 +1,2 @@
+- The partial programs are a little overwhelming
+- Type hints for lists also specify the type of variable put in a list, but hints are not enforced
