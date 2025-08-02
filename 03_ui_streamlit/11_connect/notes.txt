@@ -1,0 +1,2 @@
+-Linked documentation would be nice
+-explanations for .execute, .commit, .dataframe would be nice
