@@ -1,0 +1,1 @@
+-A better explanation of the use cases of each way to pass a parameter would be very helpful, the readme this time was too unclear

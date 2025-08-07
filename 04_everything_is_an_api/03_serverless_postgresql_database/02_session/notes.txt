@@ -1,0 +1,1 @@
+-I think giving a quick summary of basic SQL commands would help

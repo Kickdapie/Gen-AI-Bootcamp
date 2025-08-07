@@ -1,3 +1,3 @@
 -This tutorial was helpful: https://www.youtube.com/watch?v=XIdQ6gO3Anc
--Explain what * and ** do in parameters
+-Explain what * and ** do in arguments
 -Many parts of this course need explanatory materials along with the example notebooks

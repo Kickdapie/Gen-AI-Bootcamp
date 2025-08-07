@@ -1,0 +1,2 @@
+-Any extension with Claude should be the best
+-AI IDEs like Cursor and Amazon Kiro should be added here

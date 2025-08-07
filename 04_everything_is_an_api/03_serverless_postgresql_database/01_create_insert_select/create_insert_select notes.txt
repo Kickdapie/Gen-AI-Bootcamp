@@ -1,2 +1,5 @@
 .text() allows you to run raw SQL code
-
+-Explain differences between, it's confusing what the benefits of each are
+    "with engine.connect() as conn:"
+    "with engine.begin() as conn:"
+    "Session = sessionmaker(bind=engine) \n session = Session()"

@@ -1,0 +1,6 @@
+-If there are errors, try deleting pycache folders
+-cd into the tests folder to make pytest work
+-add details about "assert" keyword
+-function names must start with "test_" to be test functions
+-to run pytest with a specific file, run "pytest filename.py"
+-if the assert lines in the test functions are not met, an error will be returned

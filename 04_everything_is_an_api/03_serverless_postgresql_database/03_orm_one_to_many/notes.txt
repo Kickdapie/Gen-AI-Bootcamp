@@ -1,0 +1,3 @@
+-One way to think about it that really helped me is this:
+    "ORM is a way to map Python objects to relational database tables, 
+    allowing you to interact with the database using Python code instead of SQL."
