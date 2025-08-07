@@ -1,0 +1,3 @@
+An important thing in this readme are the roles of Kafka and Flink.
+**Apache Kafka** is a distributed system for **real-time event streaming** and **durable message storage**.
+**Apache Flink** is a stream processing engine that **consumes data from sources like Kafka** to perform **real-time analytics and transformations**.

@@ -1,0 +1,1 @@
+-RAG is just giving an LLM a database and telling it to pull from it in its responses

@@ -1,0 +1,1 @@
+-I think the explanation of threads could be better. Threads are like chats in the ChatGPT UI.

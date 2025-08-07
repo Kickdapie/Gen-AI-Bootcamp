@@ -1,0 +1,2 @@
+I think its important to note that only GPT 3.5 Turbo can be trained from OpenAI's closed source models.
+Usually you need an open source model if you want to train a model.

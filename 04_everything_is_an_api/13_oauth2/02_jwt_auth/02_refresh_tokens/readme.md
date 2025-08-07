@@ -1,6 +1,8 @@
 # Refresh Token Grants
 
 The Refresh Token grant type is used by clients to exchange a refresh token for an access token when the access token has expired.
+A refresh token is a long-lived token used to obtain a new access token after the current one expires.
+Its purpose is to allow the user to stay logged in without having to log in again, even after the short-lived access token expires.
 
 This allows clients to continue to have a valid access token without further interaction with the user.
 

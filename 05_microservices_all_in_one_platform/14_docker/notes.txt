@@ -1,0 +1,2 @@
+the readmes were very helpful here
+A YAML file in the context of docker is used to configure and run multiple docker containers as a single application

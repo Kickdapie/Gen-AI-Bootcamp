@@ -1,0 +1,1 @@
+A helpful analogy for me is that Poetry is like npm for Python

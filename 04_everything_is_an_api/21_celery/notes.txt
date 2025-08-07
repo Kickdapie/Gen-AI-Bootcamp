@@ -1,0 +1,4 @@
+I think a more comprehensive readme here would be helpful. 
+The basic concept of celery is:
+Celery is a Python library for distributed task queues, letting you run background jobs or scheduled tasks outside of your main application.
+Celery defines and sends tasks to a message broker (like Redis), the message broker stores sent tasks, and celery pulls tasks from the queue and processes them one by one

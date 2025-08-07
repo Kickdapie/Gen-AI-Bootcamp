@@ -1,0 +1,2 @@
+-Streaming sends data gradually, not all at once
+-readme is good

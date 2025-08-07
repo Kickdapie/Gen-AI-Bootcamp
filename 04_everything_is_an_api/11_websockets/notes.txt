@@ -1,0 +1,2 @@
+A simple line that explained websockets would be helpful.
+"A WebSocket in FastAPI is a communication protocol that allows for two-way, persistent, real-time communication between the client and the server."

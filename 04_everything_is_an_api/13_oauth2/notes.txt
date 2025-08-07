@@ -1,0 +1,2 @@
+This is a more complex concept that can get confusing quickly just from the amount of code. I think instead
+of just a documentation link, a better explanation in the initial readme's would be good. It would've been helpful to have this dumbed down.
